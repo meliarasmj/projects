@@ -1,0 +1,16 @@
+# Mengabaikan folder sistem dan file yang tidak relevan
+**/AppData/
+**/Application Data/
+**/Cookies/
+**/Documents/My Music/
+**/Documents/My Pictures/
+**/Documents/My Videos/
+**/Local Settings/
+**/My Documents/
+**/NetHood/
+**/PrintHood/
+**/Recent/
+**/SendTo/
+**/Start Menu/
+**/Templates/
+**/Temporary Internet Files/
