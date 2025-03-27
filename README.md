@@ -4,7 +4,7 @@ This repository contains several projects developed to address real-world challe
 
 ## Projects List:
 
-## 1. **[Project-1 = Expert System for Diagnosing the Level of Online Game Addiction Level]**  
+## 1. **Project-1 = Expert System for Diagnosing the Level of Online Game Addiction Level**  
 **Role**: Web Developer  
 **Date**: Nov. 2024  
 
@@ -16,7 +16,7 @@ This repository contains several projects developed to address real-world challe
 
 ---
 
-## 2. **[Project-2 = Design and Implementation of an Android E-Commerce App]**  
+## 2. **Project-2 = Design and Implementation of an Android E-Commerce App**  
 **Role**: UI/UX Designer  
 **Date**: July 2023  
 
@@ -28,7 +28,7 @@ This repository contains several projects developed to address real-world challe
 
 ---
 
-## 3. **[Project-3 = Measuring the Maturity Level of Information Technology Governance Using the COBIT 5 MEA Domain Framework]**  
+## 3. **Project-3 = Measuring the Maturity Level of Information Technology Governance Using the COBIT 5 MEA Domain Framework**  
 **Role**: Data Analyst  
 **Date**: June 2023  
 
