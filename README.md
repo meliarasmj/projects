@@ -1,43 +1,47 @@
 # Portfolio Projects
 
-This repository contains my portfolio showcasing various projects that I've worked on in the fields of Web Development, Data Analysis, and UI/UX Design.
+This repository contains several projects developed to address real-world challenges across various fields. Below are the descriptions and uses of each project.
 
 ## Projects List:
 
-### 1. **Project-1 : Expert System for Diagnosing Online Game Addiction**
-   - **Period**: May 2024 - November 2024
-   - **Description**: I developed a web-based expert system to diagnose the level of online game addiction using the Certainty Factor method. The system has helped over 250 students at the University of Malikussaleh assess their addiction levels.
-   - **Features**:
-     - Provides diagnostic questions to assess addiction levels.
-     - Uses the Certainty Factor method to generate accurate results.
-     - User-friendly interface for students to easily interact with the system.
-   - **Contributions**:
-     - Collaborated with experts to gather and analyze data.
-     - Identified 21 symptoms across 5 key aspects to assess game addiction levels.
-     - Applied solution-selling by tailoring the system to meet the needs of students and wellness programs.
+## 1. **[Project-1 = Expert System for Diagnosing the Level of Online Game Addiction Level]**  
+**Role**: Web Developer  
+**Date**: Nov. 2024  
 
-### 2. **Project-2 : Data Analysis for IT Governance Maturity at University of Malikussaleh Library**
-   - **Period**: May 2023 - June 2023
-   - **Description**: I performed data analysis using Microsoft Excel to assess the IT governance maturity at the University of Malikussaleh Library based on the COBIT 5 MEA framework.
-   - **Features**:
-     - Analyzed data related to IT governance and identified areas for improvement.
-     - Provided recommendations to enhance the IT system and define business opportunities.
-   - **Contributions**:
-     - Collaborated with the team to evaluate data and generate reports that helped improve IT efficiency.
+**Usefulness:**
+- **Diagnosing Online Game Addiction:** This expert system is designed to assess the level of online game addiction based on users' answers to a series of questions. It helps students evaluate their gaming behavior and determine whether it falls within healthy limits or suggests potential addiction.
+- **Support for Wellness Programs:** The system can be used in wellness programs in educational institutions to identify students who may require counseling or intervention, supporting mental health initiatives.
+- **Data-Driven Insights:** It collects data on key addiction symptoms, which can be analyzed to gain insights into gaming behaviors and trends within specific groups, such as university students.
+- **Technologies used:** HTML, CSS, PHP, MySQL, UML, Certainty Factor  
 
-### 3. **Project-3 : UI/UX Design for E-Commerce App "Warung Nasi Kantin Tangga"**
-   - **Period**: June 2023 - July 2023
-   - **Description**: I designed the user interface (UI) for an Android-based e-commerce app called "Warung Nasi Kantin Tangga," aimed at optimizing the sales process and improving user engagement.
-   - **Features**:
-     - Created wireframes and prototypes to enhance user experience (UX).
-     - Optimized the sales flow from browsing products to checkout.
-   - **Contributions**:
-     - Worked closely with the development team to align design with app functionality.
-     - Iterated on designs based on feedback to improve usability and drive sales.
+---
 
-## How to Run the Projects
-To try out the systems or applications developed, follow these steps:
+## 2. **[Project-2 = Design and Implementation of an Android E-Commerce App]**  
+**Role**: UI/UX Designer  
+**Date**: July 2023  
 
-1. Clone this repository to your local machine:
-   ```bash
-   git clone https://github.com/username/projects.git
+**Usefulness:**
+- **Enhanced User Experience for E-Commerce:** The project focuses on creating a user-friendly interface for an Android-based e-commerce app, enhancing the shopping experience for users, allowing them to browse products, make secure purchases, and manage their accounts seamlessly.
+- **Simplified Shopping Journey:** The design streamlines the user's journey from browsing to checkout, simplifying the process and improving usability, which increases customer satisfaction and engagement.
+- **Optimized for Mobile Devices:** As e-commerce relies heavily on mobile traffic, this project optimizes the app's interface and functionality for mobile users, ensuring responsiveness and ease of use.
+- **Technologies used:** Figma, XML, Kotlin, Android Studio  
+
+---
+
+## 3. **[Project-3 = Measuring the Maturity Level of Information Technology Governance Using the COBIT 5 MEA Domain Framework]**  
+**Role**: Data Analyst  
+**Date**: June 2023  
+
+**Usefulness:**
+- **Assessing IT Governance:** This project helps organizations measure their IT governance maturity using the COBIT 5 MEA (Monitor, Evaluate, and Assess) framework. It evaluates the effectiveness of IT processes and governance mechanisms, providing valuable feedback on areas for improvement.
+- **Improving IT Systems:** By measuring governance maturity, the project helps organizations (such as the University of Malikussaleh Library) identify weaknesses in IT management and implement improvements, leading to more efficient, secure, and reliable IT systems.
+- **Data-Driven Decision Making:** The project uses data analysis tools, like Microsoft Excel, to assess performance indicators, identify gaps, and offer recommendations for enhancing IT governance practices.
+- **Technologies used:** Microsoft Excel, COBIT 5 MEA Framework  
+
+---
+
+### **Conclusion**
+
+- **Project-1 (Expert System for Diagnosing Game Addiction)** helps individuals assess and understand their online gaming behavior, promoting healthier gaming habits, and supporting wellness initiatives.
+- **Project-2 (Android E-Commerce App)** enhances the e-commerce experience by designing a mobile app that simplifies shopping and provides a smooth, user-centered interface for customers.
+- **Project-3 (IT Governance Maturity Assessment)** enables organizations to evaluate the maturity of their IT governance practices, providing insights and recommendations for improvement, optimizing IT management systems.
