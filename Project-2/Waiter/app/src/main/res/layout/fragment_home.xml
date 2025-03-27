@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:layout_marginBottom="60dp">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/btnhome"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical|center"
+                    android:orientation="horizontal"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp">
+
+                    <LinearLayout
+                        android:id="@+id/itemHeader"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:id="@+id/tvNama"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/blacks"
+                            android:textSize="12sp"
+                            android:text="Hello, Diki"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:layout_marginTop="10dp"
+                            android:textSize="14sp"
+                            android:text="Pilih Makanan Kesukaanmu hari ini"/>
+
+
+                    </LinearLayout>
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/ivFoto"
+                        android:layout_weight="1"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/ic_note" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="16dp"
+                    android:paddingLeft="16dp"
+                    android:orientation="vertical">
+
+    <!--                <LinearLayout-->
+    <!--                    android:id="@+id/linearLayout2"-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:layout_below="@+id/tr"-->
+    <!--                    android:layout_weight="1"-->
+    <!--                    android:background="#2DD3D3D3"-->
+    <!--                    android:orientation="horizontal">-->
+
+    <!--                    <ImageView-->
+    <!--                        android:id="@+id/btnView"-->
+    <!--                        android:padding="10dp"-->
+    <!--                        android:layout_gravity="left"-->
+    <!--                        android:backgroundTint="#000000"-->
+    <!--                        android:src="@drawable/ic_baseline_search_24"-->
+    <!--                        android:layout_width="40dp"-->
+    <!--                        android:layout_height="40dp"-->
+    <!--                        android:foreground="?android:selectableItemBackground"/>-->
+
+    <!--                    <FrameLayout-->
+    <!--                        android:layout_marginLeft="10dp"-->
+    <!--                        android:layout_gravity="left"-->
+    <!--                        android:layout_width="match_parent"-->
+    <!--                        android:layout_height="35.0dip"-->
+
+    <!--                        android:foreground="?android:selectableItemBackground"-->
+    <!--                        android:layout_weight="1">-->
+
+    <!--                        <EditText-->
+    <!--                            android:id="@+id/search"-->
+    <!--                            android:paddingLeft="10dp"-->
+    <!--                            android:gravity="left"-->
+    <!--                            style="@style/LoginInputText"-->
+    <!--                            android:background="@android:color/transparent"-->
+    <!--                            android:hint="Search"-->
+    <!--                            android:inputType="none|text"-->
+    <!--                            android:maxLines="1"-->
+    <!--                            android:textColor="@color/blacks" />-->
+
+    <!--                    </FrameLayout>-->
+
+    <!--                    <ImageView-->
+    <!--                        android:padding="10dp"-->
+    <!--                        android:id="@+id/btnSearch"-->
+    <!--                        android:src="@drawable/ic_baseline_keyboard_arrow_down_24"-->
+    <!--                        android:layout_gravity="left"-->
+    <!--                        android:backgroundTint="#000000"-->
+    <!--                        android:layout_width="40dp"-->
+    <!--                        android:layout_height="40dp"-->
+    <!--                        android:foreground="?android:selectableItemBackground"/>-->
+    <!--                </LinearLayout>-->
+
+                    <LinearLayout
+                        android:id="@+id/listData"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="50dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:padding="10dp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/tvNotif"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Data Tidak Ditemukan"
+                            android:visibility="gone"/>
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            tools:listitem="@layout/item_filter"/>
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="230dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/img_home" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="230dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/frame" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="right"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginTop="40dp">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:textSize="18dp"
+                                android:layout_marginTop="10dp"
+                                android:textColor="#000000"
+                                android:textStyle="bold"
+                                android:gravity="right"/>
+
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:id="@+id/btnPesan"
+                                android:layout_weight="1"
+                                android:layout_width="150dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/bg_btn_batal"
+                                android:text="Lihat Semua Menu"
+                                android:textAllCaps="false"
+                                android:textColor="@color/white"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:layout_marginTop="100dp"/>
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:paddingBottom="5dp"
+                            android:text="Kategori Menu"/>
+
+                        <TextView
+                            android:id="@+id/tvDetailMenu"
+                            android:layout_weight="1"
+                            android:paddingTop="20dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/orange"
+                            android:gravity="right"
+                            android:paddingBottom="5dp"
+                            android:textSize="10dp"
+                            android:textStyle="bold"
+                            android:text="Tampilkan Semua"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Data Tidak Ditemukan"
+                            android:visibility="gone"/>
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recycler"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            tools:listitem="@layout/item_kategori"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

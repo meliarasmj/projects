@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <RelativeLayout
+        android:id="@+id/a"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="2px">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/btn2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            app:cardBackgroundColor="#FFFFFF"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="2dp"
+            app:cardUseCompatPadding="true"
+            android:foreground="?android:selectableItemBackground">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:id="@+id/l1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="5dp">
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:text="Masukan Catatan"
+                        android:textColor="@color/color_primary"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/img"
+                        android:layout_width="179dp"
+                        android:layout_height="180dp"
+                        android:layout_gravity="center"
+                        android:foreground="@drawable/frm"
+                        android:scaleType="centerCrop" />
+
+                    <TextView
+                        android:id="@+id/tvNama"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:textStyle="bold"
+                        android:text="Nasi Goreng"
+                        android:textColor="#333"
+                        android:textSize="14sp"
+                        android:maxLines="1"
+                        android:paddingBottom="1dp"/>
+
+                    <TextView
+                        android:id="@+id/tvHarga"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:layout_marginStart="16dp"
+                        android:text="Rp. 20.000"
+                        android:textColor="@color/colorDarkGrey"
+                        android:textStyle="bold"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tvKet"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="5dp"
+                        android:text="Ket"
+                        android:textColor="@color/colorDarkGrey"
+                        android:textSize="12sp" />
+
+                    <EditText
+                        android:id="@+id/etket"
+                        android:layout_width="match_parent"
+                        android:layout_height="300px"
+                        android:background="@drawable/bg_textbox_catatan"
+                        android:inputType="text|textMultiLine"
+                        android:padding="30px"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:textSize="12sp"
+                        android:hint="Catatan Pesanan"
+                        android:gravity="top"
+                        android:text="" />
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+
+                        <LinearLayout
+                            android:id="@+id/btnhome"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:clickable="true"
+                            android:foreground="?android:selectableItemBackground"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:paddingLeft="2dp"
+                            android:paddingRight="2dp">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp">
+
+                                <ImageView
+                                    android:id="@+id/imgKurang"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="30dp"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_alignParentRight="true"
+                                    android:src="@drawable/ic_minutes" />
+
+                            </RelativeLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/btnkategori"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical|center"
+                            android:orientation="vertical"
+                            android:paddingLeft="2dp"
+                            android:paddingRight="2dp">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp">
+
+                                <androidx.appcompat.widget.AppCompatEditText
+                                    android:id="@+id/jumlah"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@null"
+                                    android:cursorVisible="true"
+                                    android:gravity="center"
+                                    android:inputType="number|none"
+                                    android:padding="4dp"
+                                    android:text="1"
+                                    android:textColor="@color/colorDarkGrey"
+                                    android:textSize="20dp"
+                                    android:textStyle="bold" />
+
+                            </RelativeLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/btnproduk"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:clickable="true"
+                            android:foreground="?android:selectableItemBackground"
+                            android:gravity="center_vertical|center"
+                            android:orientation="vertical"
+                            android:paddingLeft="2dp"
+                            android:paddingRight="2dp">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp">
+
+                                <ImageView
+                                    android:id="@+id/imgTambah"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="30dp"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_alignParentRight="true"
+                                    android:src="@drawable/ic_plus" />
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/l2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/l1"
+                    android:orientation="vertical"
+                    android:foreground="?android:selectableItemBackground"
+                    android:clickable="true">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btnAdd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:background="@drawable/bg_btn_choice"
+                        android:layout_marginTop="10dp"
+                        android:text="Tambah"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:visibility="visible"/>
+
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+</RelativeLayout>

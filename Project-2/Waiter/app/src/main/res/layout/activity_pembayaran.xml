@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/backBtn"
+            android:padding="5dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_back"
+            app:tint="@color/color_primary" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="Upload Bukti Pembayaran"
+            android:textColor="@color/color_primary"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="60dp"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="2px"
+            android:layout_marginTop="60dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/btn2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                app:cardBackgroundColor="#FFFFFF"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="2dp"
+                app:cardUseCompatPadding="true"
+                android:foreground="?android:selectableItemBackground">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <LinearLayout
+                        android:id="@+id/l1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:paddingTop="5dp">
+
+<!--                        <LinearLayout-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginEnd="16dp"-->
+<!--                            android:layout_marginStart="10dp"-->
+<!--                            android:layout_marginTop="10dp"-->
+<!--                            android:orientation="vertical">-->
+<!--    -->
+<!--                            <androidx.appcompat.widget.AppCompatButton-->
+<!--                                android:id="@+id/btnJenisPembayaran"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="30dp"-->
+<!--                                android:background="@drawable/bg_btn_bayar"-->
+<!--                                android:text="Lihat Jenis Pembayaran"-->
+<!--                                android:textAllCaps="false"-->
+<!--                                android:textColor="@color/white"-->
+<!--                                android:textSize="12sp"-->
+<!--                                android:textStyle="bold"-->
+<!--                                android:visibility="visible"/>-->
+<!--    -->
+<!--                        </LinearLayout>-->
+
+                        <ImageView
+                            android:id="@+id/ivUpload"
+                            android:padding="5dp"
+                            android:layout_width="250dp"
+                            android:layout_height="250dp"
+                            android:alpha="0.2"
+                            android:src="@drawable/bukti"
+                            android:layout_marginTop="40dp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Klik untuk upload bukti pembayaran"
+                            android:textColor="@color/colorDarkGrey"
+                            android:alpha="0.4"
+                            android:textSize="14sp"/>
+
+    <!--                    <EditText-->
+    <!--                        android:id="@+id/etNama"-->
+    <!--                        android:layout_width="match_parent"-->
+    <!--                        android:layout_height="45dp"-->
+    <!--                        android:background="@drawable/bg_textbox"-->
+    <!--                        android:inputType="text"-->
+    <!--                        android:padding="30px"-->
+    <!--                        android:layout_marginStart="10dp"-->
+    <!--                        android:layout_marginEnd="10dp"-->
+    <!--                        android:textSize="12sp"-->
+    <!--                        android:hint="Masukan Nama Pengirim sesuai dengan Rekening Bank"-->
+    <!--                        android:gravity="top"-->
+    <!--                        android:maxLines="1"-->
+    <!--                        android:text=""-->
+    <!--                        android:layout_marginTop="40dp"/>-->
+
+    <!--                    <EditText-->
+    <!--                        android:id="@+id/etAtm"-->
+    <!--                        android:layout_width="match_parent"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:background="@drawable/bg_textbox"-->
+    <!--                        android:layout_marginTop="15dp"-->
+    <!--                        android:inputType="number"-->
+    <!--                        android:padding="30px"-->
+    <!--                        android:layout_marginStart="10dp"-->
+    <!--                        android:layout_marginEnd="10dp"-->
+    <!--                        android:textSize="12sp"-->
+    <!--                        android:hint="Masukan Nomor Rekening"-->
+    <!--                        android:gravity="top"-->
+    <!--                        android:text="" />-->
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="2px">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                app:cardBackgroundColor="#FFFFFF"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="2dp"
+                app:cardUseCompatPadding="true"
+                android:foreground="?android:selectableItemBackground">
+
+                <androidx.core.widget.NestedScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginEnd="10dp"
+                                android:paddingTop="5dp">
+
+                                <TextView
+                                    android:id="@+id/tvTitle"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:paddingTop="10dp"
+                                    android:paddingBottom="10dp"
+                                    android:text="Jenis Pembayaran"
+                                    android:textColor="@color/color_primary"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:layout_width="50dp"
+                                        android:layout_height="50dp"
+                                        android:src="@drawable/ic_bsi"/>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center_vertical"
+                                            android:text="Bank Syariah Indonesia"
+                                            android:textColor="@color/black"
+                                            android:textSize="12sp"
+                                            android:layout_marginStart="10dp"
+                                            android:layout_marginLeft="10dp"/>
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center_vertical"
+                                            android:text="7149998904"
+                                            android:textColor="@color/black"
+                                            android:textSize="14sp"
+                                            android:layout_marginStart="10dp"
+                                            android:textStyle="bold"
+                                            android:layout_marginLeft="10dp"/>
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="@color/line" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:layout_width="50dp"
+                                        android:layout_height="50dp"
+                                        android:src="@drawable/ic_ovo"/>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center_vertical"
+                                            android:text="OVO"
+                                            android:textColor="@color/black"
+                                            android:textSize="12sp"
+                                            android:layout_marginStart="10dp"
+                                            android:layout_marginLeft="10dp"/>
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center_vertical"
+                                            android:text="082278546453"
+                                            android:textColor="@color/black"
+                                            android:textSize="14sp"
+                                            android:layout_marginStart="10dp"
+                                            android:textStyle="bold"
+                                            android:layout_marginLeft="10dp"/>
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="@color/line" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:layout_width="50dp"
+                                        android:layout_height="50dp"
+                                        android:src="@drawable/ic_gopay"/>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center_vertical"
+                                            android:text="GOPAY"
+                                            android:textColor="@color/black"
+                                            android:textSize="12sp"
+                                            android:layout_marginStart="10dp"
+                                            android:layout_marginLeft="10dp"/>
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center_vertical"
+                                            android:text="082278546453"
+                                            android:textColor="@color/black"
+                                            android:textSize="14sp"
+                                            android:layout_marginStart="10dp"
+                                            android:textStyle="bold"
+                                            android:layout_marginLeft="10dp"/>
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="@color/line" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:layout_width="50dp"
+                                        android:layout_height="50dp"
+                                        android:src="@drawable/ic_dana"/>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center_vertical"
+                                            android:text="DANA"
+                                            android:textColor="@color/black"
+                                            android:textSize="12sp"
+                                            android:layout_marginStart="10dp"
+                                            android:layout_marginLeft="10dp"/>
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center_vertical"
+                                            android:text="082278546453"
+                                            android:textColor="@color/black"
+                                            android:textSize="14sp"
+                                            android:layout_marginStart="10dp"
+                                            android:textStyle="bold"
+                                            android:layout_marginLeft="10dp"/>
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                            </LinearLayout>
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </androidx.core.widget.NestedScrollView>
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lcart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:padding="10dp"
+        android:background="#FFFFFF"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnKirim"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/bg_btn_batal"
+                    android:text="Kirim"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:visibility="visible"/>
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    style="?android:attr/progressBarStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:visibility="gone"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swlayout"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/pb1"
+        android:layout_marginTop="10dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="4dp"
+            tools:listitem="@layout/item_menu"/>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <ProgressBar
+        android:id="@+id/pb1"
+        style="?android:attr/progressBackgroundTint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layoutSearch"
+        android:padding="50dp" />
+
+    <LinearLayout
+        android:id="@+id/lavKosong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Laporan Kosong"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="#2DD3D3D3"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/btnView"
+            android:padding="10dp"
+            android:layout_gravity="left"
+            android:backgroundTint="#000000"
+            android:src="@drawable/ic_baseline_search_24"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:foreground="?android:selectableItemBackground"/>
+
+        <FrameLayout
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="left"
+            android:layout_width="match_parent"
+            android:layout_height="35.0dip"
+
+            android:foreground="?android:selectableItemBackground"
+            android:layout_weight="1">
+
+            <EditText
+                android:id="@+id/search"
+                android:paddingLeft="10dp"
+                android:gravity="left"
+                style="@style/LoginInputText"
+                android:background="@android:color/transparent"
+                android:hint="Search"
+                android:inputType="none|text"
+                android:maxLines="1"
+                android:textColor="@color/blacks" />
+
+        </FrameLayout>
+
+        <ImageView
+            android:padding="10dp"
+            android:id="@+id/btnSearch"
+            android:src="@drawable/ic_baseline_keyboard_arrow_down_24"
+            android:layout_gravity="left"
+            android:backgroundTint="#000000"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:foreground="?android:selectableItemBackground"/>
+    </LinearLayout>
+<!--    <LinearLayout-->
+<!--        android:id="@+id/tool_bar"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content">-->
+<!--        <include-->
+<!--            android:id="@+id/toolbar"-->
+<!--            layout="@layout/toolbar_text_search" />-->
+<!--    </LinearLayout>-->
+</RelativeLayout>
+
+    <ImageView
+        android:id="@+id/fabDaftar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_note"
+        app:fab_colorNormal="#eaeaea"
+        app:fab_colorPressed="#A3A3A3"
+        app:fab_size="normal"
+        android:layout_gravity="end|bottom"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

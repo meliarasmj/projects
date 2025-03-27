@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "357999144734",
+    "project_id": "appc-a0425",
+    "storage_bucket": "appc-a0425.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:357999144734:android:2a11f2da3ab0bf2106a30f",
+        "android_client_info": {
+          "package_name": "com.example.waiter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "357999144734-g7e4rp6q35dgsvmnhm8ul9ve89ljikf0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBN7R7ibkQBagdvRpk3HooAUPIM02w2dyA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "357999144734-g7e4rp6q35dgsvmnhm8ul9ve89ljikf0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

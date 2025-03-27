@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="color_primary">#FE7251</color>
+    <color name="color_primary_dark">#EF544F</color>
+    <color name="color_secondary">#00779F</color>
+    <color name="teal_700">#62CDE2</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="line">#14000000</color>
+    <color name="profileAccentColor">#F7F7F7</color>
+    <color name="red">#DA463C</color>
+    <color name="blue">#179DDC</color>
+    <color name="green">#23B14B</color>
+    <color name="orange">#F86D07</color>
+    <color name="blacks">#727376</color>
+
+    <color name="colorDarkGrey">#333333</color>
+    <color name="background">#f1f1f1</color>
+
+    <color name="transparent">#00000000</color>
+
+    <color name="aliceblue">#FFf0f8ff</color>
+    <color name="aliceblue_dark">#FFa3bcd2</color>
+    <color name="dark_gray">#222222</color>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+</resources>
