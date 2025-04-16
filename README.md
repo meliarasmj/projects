@@ -40,10 +40,6 @@ This repository contains several projects developed to address real-world challe
 
 ---
 
-Tentu! Berikut adalah format yang sudah disesuaikan untuk project **AI-Powered Fact-Checking Tool for WhatsApp Forwarded Messages** dengan struktur yang rapi dan sesuai dengan format sebelumnya:
-
----
-
 ## 4. **AI‑Powered Fact‑Checking Tool for WhatsApp Forwarded Messages**  
 **Role**: AI Developer  
 **Date**: March 2025  
