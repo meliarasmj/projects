@@ -40,8 +40,27 @@ This repository contains several projects developed to address real-world challe
 
 ---
 
+Tentu! Berikut adalah format yang sudah disesuaikan untuk project **AI-Powered Fact-Checking Tool for WhatsApp Forwarded Messages** dengan struktur yang rapi dan sesuai dengan format sebelumnya:
+
+---
+
+## 4. **AI‑Powered Fact‑Checking Tool for WhatsApp Forwarded Messages**  
+**Role**: AI Developer  
+**Date**: March 2025  
+
+**Usefulness:**
+- **Fact-Checking Tool:** This project provides an AI-powered tool to analyze and verify the accuracy of WhatsApp forwarded messages, helping users identify potential misinformation in real time.
+- **Enhancing Trust:** The tool helps users make informed decisions about the validity of information they receive through messaging apps, contributing to a more informed and critical user base.
+- **Real-Time Content Verification:** Leveraging NLP and OpenAI's GPT models, the system processes and verifies content within seconds, offering users clear, AI-generated explanations of the message's accuracy.
+- **User-Friendly Interface:** Built with Streamlit, the application ensures a seamless and interactive experience for users to paste messages and get instant feedback.
+- **Technologies used:** Python, OpenAI API, Streamlit, NLP, LLM
+
+---
+ 
+
 ### **Conclusion**
 
 - **Project-1 (Expert System for Diagnosing Game Addiction)** helps individuals assess and understand their online gaming behavior, promoting healthier gaming habits, and supporting wellness initiatives.
 - **Project-2 (Android E-Commerce App)** enhances the e-commerce experience by designing a mobile app that simplifies shopping and provides a smooth, user-centered interface for customers.
 - **Project-3 (IT Governance Maturity Assessment)** enables organizations to evaluate the maturity of their IT governance practices, providing insights and recommendations for improvement, optimizing IT management systems.
+- **Project-4 (AI-Powered Fact-Checking Tool for WhatsApp Forwarded Messages)** provides users with an AI-powered tool to analyze and verify the accuracy of forwarded messages in real time, helping to reduce misinformation and promote more informed decision-making among users.
